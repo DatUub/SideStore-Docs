@@ -1,9 +1,21 @@
-# SideStore-Docs
+---
+description: >-
+  Welcome to SideStore! Here, you can find guides that aid in the installation
+  and usage of SideStore, as well as references for developers working with
+  SideStore!
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: true
+---
 
-## Welcome to the SideStore wiki's source repo!
+# 🏠 Home
 
-The wiki itself can be found at https://wiki.sidestore.io/.
-
-## Status
-
-![Alt](https://repobeats.axiom.co/api/embed/7fd3c052892e88d60945586ce1a82feeb709bd8a.svg "Repobeats analytics image")
+**These guides will show you how to install SideStore on your iPhone or iPad and get started with sideloading apps. If you're a developer, we also have a dedicated guide on how to distribute your apps through SideStore!**
