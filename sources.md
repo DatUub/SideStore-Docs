@@ -2,11 +2,11 @@
 
 This document provides all the details that describe how to make your own AltStore Source. There are five important sections to read:
 
-* Creating the JSON
-* Releasing apps
-* Updating apps
-* Sending out news
-* New features coming soon
+- Creating the JSON
+- Releasing apps
+- Updating apps
+- Sending out news
+- New features coming soon
 
 So lets dive right in.
 
@@ -111,8 +111,8 @@ This should point directly to wherever you host the icon for your app. Note that
 
 This might take some experimentation, but the best tint color is usually choosing one of the darker colors represented in your app icon. The tint color will be used in two places:
 
-* For the install button
-* As a background color for the larger app listing bubble \(but this will be a lighter shade\)
+- For the install button
+- As a background color for the larger app listing bubble \(but this will be a lighter shade\)
 
 The tint color must be in the 6 character Hex format, with the '#' before the 6 characters as optional.
 
@@ -124,22 +124,22 @@ This is an integer value that should be set equivalent to the size of your IPA i
 
 This is to show the user what various permissions your app requires. Create an entry for each separate permission your app requires. The accepted permission `types` are the following:
 
-* photos
-* camera
-* location
-* contacts
-* reminders
-* music
-* microphone
-* speech-recognition
-* background-audio
-* background-fetch
-* bluetooth
-* network
-* calendars
-* faceid
-* siri
-* motion
+- photos
+- camera
+- location
+- contacts
+- reminders
+- music
+- microphone
+- speech-recognition
+- background-audio
+- background-fetch
+- bluetooth
+- network
+- calendars
+- faceid
+- siri
+- motion
 
 Your `usageDescription` should explain what the permission is and why your app needs it.
 
@@ -169,7 +169,7 @@ Currently, this is also tied in with the Patreon app locking system used with Al
 }
 ```
 
-A list containing the version(s) of your application. *New with AltSource v2.0 API.*
+A list containing the version(s) of your application. _New with AltSource v2.0 API._
 
 Important note: AltStore will display the first version (with compatible min/max iOS versions) in the list as the "latest" release, regardless of version or date. So keep in mind that the order that versions appear **must** be in reverse chronological order.
 
@@ -207,11 +207,11 @@ AltStore will automatically notify users about updates to your app and will prom
 
 The AltStore team recommends that you simply create another object in the `versions` list with the following properties changed to reflect the updated app:
 
-* version
-* date
-* localizedDescription _\(optional\)_
-* downloadURL
-* size
+- version
+- date
+- localizedDescription _\(optional\)_
+- downloadURL
+- size
 
 And of course you can change any other property outside of the `versions` list if you would like to update the way your app appears in AltStore.
 
@@ -223,11 +223,11 @@ And of course you can change any other property outside of the `versions` list i
 
 The following properties are still usable with the v1.0 API as properties of an app object, but are deprecated and subject to discontinuation as soon as March 2023 (final date to be announced).
 
-* version
-* versionDate
-* versionDescription
-* downloadURL
-* size
+- version
+- versionDate
+- versionDescription
+- downloadURL
+- size
 
 If there is not a `versions` list in the AltSource app, these properties will be required instead and used by AltStore to display the release information.
 
@@ -304,6 +304,7 @@ Not entirely sure what these will look like and they are not set in stone yet. B
 ### Patreon support
 
 Included at the root of the AltSource:
+
 ```json
 "userInfo": {
   "patreonAccessToken": "afjbsafasfvsjdgfjhkouohjkledjyrqwfgse"
@@ -311,6 +312,7 @@ Included at the root of the AltSource:
 ```
 
 Included within any app that is to be Patreon locked:
+
 ```json
 {
   ...
@@ -320,10 +322,9 @@ Included within any app that is to be Patreon locked:
 }
 ```
 
-
 This will allow you to set certain apps to only be available to your Patrons. Other similar capabilities to this will available to specify in the `userInfo` section in future.
 
-**⚠ Warning**: This is currently implemented in AltStore so that if a patreonAccessToken is provided, any apps with the ``"beta": true`` property will be hidden from users and no longer update/refresh unless the linked Patreon account in AltStore settings is subscribed to the account the token is associated with.
+**⚠ Warning**: This is currently implemented in AltStore so that if a patreonAccessToken is provided, any apps with the `"beta": true` property will be hidden from users and no longer update/refresh unless the linked Patreon account in AltStore settings is subscribed to the account the token is associated with.
 
 ### Multi-device screenshot support
 
@@ -367,6 +368,7 @@ The primaryCategory and primarySubcategories will allow you to specify which cat
   "substanceUse"
 ]
 ```
+
 These can be useful for safe-guarding certain apps from users under the suggested age rating by filtering these apps according to the settings contained within AltStore.
 
 ## That's all there is!
@@ -374,4 +376,3 @@ These can be useful for safe-guarding certain apps from users under the suggeste
 If you want to see the full JSON example file that was used throughout this tutorial, [here it is.](https://github.com/noah978/AltStore-Docs/blob/master/apps.json)
 
 Here are some good existing AltStore Sources: The [primary AltStore Source](https://apps.altstore.io), any of the Sources at [Quark Sources](https://quarksources.github.io), or the [DolphiniOS Source](https://altstore.oatmealdome.me/). I would highly recommend using this [AltStore Source Browser](https://altsource.by.lao.sb/browse/) to get a visual display of your Source outside of AltStore.
-
