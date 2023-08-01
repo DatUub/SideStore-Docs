@@ -23,7 +23,7 @@ JIT allows apps sideloaded with SideStore to enable just-in-time compilation, mo
 1. Open the "My Apps" tab then long-press the app you want to use JIT.
 2. Press "Enable JIT" to launch the app, and within a few seconds JIT should be enabled.
 
-<figure><img src="../.gitbook/assets/ezgif-frame-013 (1).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/jit.png" alt="" width="180"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Once enabled, an app can continue using JIT until it is force-quit from the app switcher or purged from memory while suspended in the background.
