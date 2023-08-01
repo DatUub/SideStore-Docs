@@ -49,7 +49,7 @@ Please note that this method allows you to setup a **2FA-less Apple account**. T
 
 You can continue to use this account to sideload SideStore anyway you like, you do not need to follow the rest of this page.
 
-## Create an Apple ID account using your device | No Email
+## Create an Apple ID account using your device
 
 ### Requirements
 
