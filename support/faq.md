@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: false
+---
+
 # ❓ FAQ
 
 ## Table of Contents
@@ -29,16 +43,15 @@
 25. [I want to test a SideStore version, and I want my data to stay when switching to a test version. Do I remove my app or sideload the test version via SideStore?](faq.md#paragraph25)
 26. [My apps disappeared and I don't know what to do!](faq.md#paragraph26)
 27. [I’m unable to select my pairing file with any file type.](faq.md#paragraph27)
+28. [Cannot start DebugServer.](faq.md#paragraph28)
 
 ## FAQ
 
-This is a list of frequenty asked questions for SideStore. This has a list of common questions we get with our development of SideStore, and some questions that might want to be answered for different types of people, or for people having problems.
+This is a list of frequently asked questions for SideStore. This has a list of common questions we get with our development of SideStore, and some questions that might want to be answered for different types of people, or for people having problems.
 
 ### What is SideStore? <a href="#paragraph1" id="paragraph1"></a>
 
 SideStore is an iOS application that allows you to sideload apps onto your iOS device using only your Apple ID. SideStore resigns apps with your personal development certificate, and then uses a specially designed VPN in order to trick iOS into installing them. SideStore will periodically "refresh" your apps in the background, to keep their normal 7-day development period from expiring. SideStore's goal is to provide an untethered sideloading experience. It's a community driven fork of AltStore, and has already implemented some of the community's most-requested features. You only need a computer once during installation.
-
-(Contributions are welcome! 🙂)
 
 ### Can I activate JIT? <a href="#paragraph2" id="paragraph2"></a>
 
@@ -74,7 +87,9 @@ Go to the homescreen for it to finish. We don't know why this happens, but it mi
 
 ### Can I sign more than 3 apps to be active? <a href="#paragraph10" id="paragraph10"></a>
 
-No, as that’s an iOS and developer account limitation.
+No, as that’s an iOS and developer account limitation.&#x20;
+
+Learn More: [activating-apps.md](../using-sidestore/activating-apps.md "mention")
 
 ### I have a problem or bug or request for a feature or quality of life improvement. <a href="#paragraph11" id="paragraph11"></a>
 
@@ -82,15 +97,21 @@ Please make a GitHub issue on our GitHub page to make a bug report or feature re
 
 ### I am a developer, how does this affect me? <a href="#paragraph12" id="paragraph12"></a>
 
-#### It doesn’t affect you directly, other than maybe an update to AltKit when/if we get our additions. Do I need to update my app to support this? Nope, as currently it acts like AltStore while signing.
+It doesn’t affect you directly, other than maybe an update to AltKit when/if we get our additions.
+
+### Do I need to update my app to support this? <a href="#paragraph13" id="paragraph13"></a>
+
+Nope, as currently it acts like AltStore while signing.
 
 ### As a user, I’m having trouble logging into SideStore. I get an error. <a href="#paragraph14" id="paragraph14"></a>
 
-There is many reasons this can happen, but the most common issue is that we are using Sideloady as our default Anisette server, and they get login problems at times, but it's also one of the biggest servers so it’s well known. You can currently change the Anisette server on your device’s Settings app in SideStore under “Anisette URL”.
+There is many reasons this can happen, but the most common issue is that we are using Sideloadly as our default Anisette server, and they get login problems at times, but it's also one of the biggest servers so it’s well known. You can currently change the Anisette server on your device’s Settings app in SideStore under “Anisette URL”.&#x20;
+
+Learn More: [custom-anisette.md](../setting-up-sidestore/custom-anisette.md "mention")
 
 ### Is SideStore going to have a Storefront? <a href="#paragraph15" id="paragraph15"></a>
 
-We currently have a Community Source! Source URL: https://community-apps.sidestore.io/sidecommunity.json
+We currently have a [Community Source!](https://community-apps.sidestore.io/sidecommunity.json)
 
 ### Why does my app have an update called "pacer test"? <a href="#paragraph16" id="paragraph16"></a>
 
@@ -139,3 +160,29 @@ Don't panic! Re-sideload the apps without removing them from your device, and yo
 ### I'm unable to select my pairing file with any file type. <a href="#paragraph27" id="paragraph27"></a>
 
 Apple's file system isn't exactly perfect, and sometimes it will just not allow you to select files from within apps. You can try moving the pairing file to the root directory of the SideStore folder in the Files app in "On My iPhone/iPad", and naming it `ALTPairingFile.mobiledevicepairing`. Note that it is case sensitive.
+
+### Cannot start DebugServer <a href="#paragraph28" id="paragraph28"></a>
+
+There is times where the Debugserver doesn't work. However there are different fixes that can be done.
+
+#### **Fix one: Manually install Developer disk image.**
+
+Sometimes when out there in the world. you have slow Wi-Fi and that can interfere with the fast speed of sidestore and you might have to manually install a developer disk image. To do this you need to do.
+
+1. Find your ios version or closest one and then Download and extract the zip file.
+
+[Link to github](https://github.com/jawshoeadan/Xcode\_Developer\_Disk\_Images/releases)
+
+If you cannot find your dmg try checking ouf the list of dmg version for each ios.
+
+[List of DMG versions SideStore and JitStreamer uses.](https://github.com/jkcoxson/JitStreamer/blob/master/versions.json)
+
+3. Rename the files inside to the current ios version you have. for example 16.6.dmg and 16.6.dmg.signature for ios 16.6.
+4. Go to files and go to sidestore open or make folder called DMG.
+5. Place the files in the DMG file.
+
+#### **Fix Two: Make a new pairing file**
+
+To start the process of using a new pairing file you go to settings tab and click Reset Pairing file and you accept the prompt. Then you just follow the [Pairing File instructions](https://wiki.sidestore.io/guides/install#pairing-file).
+
+## For more support: [Join Our Discord](https://discord.gg/SideStore).

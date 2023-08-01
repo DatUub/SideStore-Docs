@@ -1,33 +1,28 @@
 # Table of contents
 
 * [🏠 Home](README.md)
-  * [Source](index/source.md)
 
-## Setup Sidestore
+## Setting Up Sidestore
 
-* [⬇ Installation](setup-sidestore/install.md)
-* [🔥 Using a burner Apple ID account with SideStore](setup-sidestore/create-account.md)
-* [🔑 Custom Anisette Server](setup-sidestore/custom-anisette.md)
-* [🐮 MacDirtyCow](setup-sidestore/macdirtycow.md)
+* [⬇ Installation](setting-up-sidestore/install.md)
+* [🔥 Using a burner Apple ID account with SideStore](setting-up-sidestore/create-account.md)
+* [🔑 Custom Anisette Server](setting-up-sidestore/custom-anisette.md)
+* [🐮 MacDirtyCow](setting-up-sidestore/macdirtycow.md)
 
 ## Support
 
 * [❓ FAQ](support/faq.md)
-* [Support](support/support.md)
+* [👾 Join Our Discord](https://discord.gg/sidestore)
 
 ## Using Sidestore
 
-* [🆔 App IDs](using-sidestore/app-ids.md)
-* [🏎 SideJIT](using-sidestore/sidejit.md)
-* [🔎 Trusted Sources](using-sidestore/trusted-sources.md)
 * [🔓 Activating Apps](using-sidestore/activating-apps.md)
+* [🆔 App IDs](using-sidestore/app-ids.md)
+* [🏎 JIT](using-sidestore/jit.md)
+* [🔎 Trusted Sources](using-sidestore/trusted-sources.md)
 
 ## Dev Resources
 
-* [⬆ Update Apps](dev-resources/update-apps.md)
+* [📓 Making a Source](dev-resources/making-a-source.md)
+* [⬆ Updating Apps](dev-resources/updating-apps.md)
 * [🔗 URL Schemes](dev-resources/url-schemes.md)
-
-## Release Notes
-
-* [🛍 SideStore](release-notes/sidestore.md)
-* [ADD STUFF ON THE TOP RIGHT AND BOTTOM LEFT ALSO ADD DISCORD WIDGET](release-notes/add-stuff-on-the-top-right-and-bottom-left-also-add-discord-widget.md)

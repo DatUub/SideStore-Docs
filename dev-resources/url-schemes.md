@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 🔗 URL Schemes
 
 The following is the list of different URL Schemes that can be used to interact with SideStore. These are incredibly useful because they allow developers to simply put a one-click link on their social media or website, and iOS will open the link directly in SideStore, performing the action(s) specified.
@@ -10,7 +24,7 @@ The current list of things you can do using URL Schemes is limited to installing
 sidestore://install?url=[download url]
 ```
 
-### Add an AltSource
+### Add an AltSource or SideSource
 
 ```
 sidestore://source?url=[source url]
