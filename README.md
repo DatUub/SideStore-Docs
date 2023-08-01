@@ -1,9 +1,31 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 🏠 Home
 
-## Welcome to the SideStore wiki's source repo!
+## Welcome to SideStore! Here, you can find guides that aid in the installation and usage of SideStore, as well as references for developers working with SideStore.
 
-The wiki itself can be found at https://wiki.sidestore.io/.
+## Quick Links:
 
-## Status
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-![Alt](https://repobeats.axiom.co/api/embed/7fd3c052892e88d60945586ce1a82feeb709bd8a.svg)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
